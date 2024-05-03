@@ -12,4 +12,4 @@
 
 ③出力する（どの工程の最後にも必ず「;」をいれること！）
 
-※今回は、「Java」ディレクトリ直下に「int_string.java」を作成
+※今回は、「Java/int_string」直下に「int_string.java」を作成
