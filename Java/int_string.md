@@ -20,7 +20,7 @@
 - namae・・・△ローマ字
 - 名前・・・△日本語
 
-## 使い方 (※今回は、「Java/int_string」直下に「int_string.java」を作成)
+## 使い方 (※今回は「Java/int_string」直下に「int_string.java」を作成)
 [![Image from Gyazo](https://i.gyazo.com/bb1f65e317e9438a8dd5bed774c453f6.png)](https://gyazo.com/bb1f65e317e9438a8dd5bed774c453f6)
 
 #### ①「データ型　変数名;」で定義する（順番は必ず順守）ex.)数値型：「int number」 文字列型：「String text」
