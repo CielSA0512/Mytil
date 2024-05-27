@@ -16,3 +16,10 @@
 ※このとき、VsCode上のソースファイル付近に「HelloWorld.class」が作成されるが、これはjavaのプログラムを実行するのに必要なファイルなので消さないこと！
 
 ⑦ ターミナルで「java HelloWorld」を実行して、HelloWorld!が表示されたらオッケー！
+
+## 「public static void main (String[] args」について
+- 「public static void main (String[] args」はJavaを実行するのに、必須のメソッド
+[![Image from Gyazo](https://i.gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d.png)](https://gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d)
+
+## 参考資料
+https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
