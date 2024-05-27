@@ -22,4 +22,4 @@
 [![Image from Gyazo](https://i.gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d.png)](https://gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d)
 
 ## 参考資料
-https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
+「public static ~ について」：https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
