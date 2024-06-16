@@ -21,5 +21,7 @@
 - 「public static void main (String[] args)」はJavaを実行するのに、必須のメソッド
 [![Image from Gyazo](https://i.gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d.png)](https://gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d)
 
+  ※メソッドは「class クラス名{ }」の{ }の中に定義する必要がある
+
 ## 参考資料
 「public static ~ について」：https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
