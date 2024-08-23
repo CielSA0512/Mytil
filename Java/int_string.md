@@ -8,6 +8,7 @@
 - String型・・・文字列 　※StringのSは大文字にすること！
 - double型・・・小数点
 - boolean型・・・真偽値
+- var型・・・型推論　※どんな型を推論したかは「System.out.println(((Object)変数名).getClass().getSimpleName());」で調べられる
 
 ## 変数名の注意点
 #### 良い例
