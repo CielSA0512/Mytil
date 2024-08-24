@@ -17,11 +17,11 @@
 
 ⑦ ターミナルで「java HelloWorld」を実行して、HelloWorld!が表示されたらオッケー！
 
-## 「public static void main (String[] args)」について
-- 「public static void main (String[] args)」はJavaを実行するのに、必須のメソッド
+## 「public static void main (String[] args){}」について
+- 「public static void main (String[] args){}」はJavaを実行するのに、必須のメソッド
 [![Image from Gyazo](https://i.gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d.png)](https://gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d)
 
-  ※メソッドは「class クラス名{ }」の{ }の中に定義する必要がある
+  ※publicの部分は「アクセス修飾子」といい、private(同一クラス内からのみアクセス可能)などもある 
   
   ※void自体は「戻り値を返さない」だが、この部分に当てはまるのは返り値のデータ型
 
