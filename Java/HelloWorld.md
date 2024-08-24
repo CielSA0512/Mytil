@@ -22,6 +22,7 @@
 [![Image from Gyazo](https://i.gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d.png)](https://gyazo.com/36a7168c16ae29bd46ac78b2a6b7284d)
 
   ※メソッドは「class クラス名{ }」の{ }の中に定義する必要がある
-
+  
+  ※void自体は「戻り値を返さない」だが、この部分に当てはまるのは返り値のデータ型
 ## 参考資料
 「public static ~ について」：https://qiita.com/kahatato/items/1b4921bb58731f0b7fea
