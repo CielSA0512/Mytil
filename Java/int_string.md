@@ -15,6 +15,8 @@
 ## リテラル
 [![Image from Gyazo](https://i.gyazo.com/610eaa1f52ef21da5bdefb1e2bde1f1b.png)](https://gyazo.com/610eaa1f52ef21da5bdefb1e2bde1f1b)
 
+　※long型はint型で扱える数値の範囲を超え、long型でしか扱えない数値を変数に入れる場合は末尾に「L」や「l」(どちらでも可)を必ずつける
+
 ## エスケープ文字
 [![Image from Gyazo](https://i.gyazo.com/04a357899d6fd28d1f6963c4f79cb361.png)](https://gyazo.com/04a357899d6fd28d1f6963c4f79cb361)
 
