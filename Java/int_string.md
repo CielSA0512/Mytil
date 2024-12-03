@@ -74,6 +74,9 @@
 
 [![Image from Gyazo](https://i.gyazo.com/79a1ab29570f339748a4efab1319af62.png)](https://gyazo.com/79a1ab29570f339748a4efab1319af62)
 
+算術演算子一覧
+[![Image from Gyazo](https://i.gyazo.com/49ff8a2bce1742b401c50e8514ad7a7d.png)](https://gyazo.com/49ff8a2bce1742b401c50e8514ad7a7d)
+
 ※自己代入の省略の仕方
 
 - x = x + 10; → x += 10;
@@ -82,5 +85,7 @@
   
 ※値が1の時だけさらに省略して書ける！
 - x = x + 1; → x += 1; → x ++;
-
 - x = x - 1; → x -= 1; → x --;
+
+※「X++」は式を実行した後に「＋１」を行う（「X--」も同様）
+[![Image from Gyazo](https://i.gyazo.com/af40696247d39c7ccbb9b252aa8c3eb7.png)](https://gyazo.com/af40696247d39c7ccbb9b252aa8c3eb7)　[![Image from Gyazo](https://i.gyazo.com/eb92e3a6ce49eda5e501ab677e81126d.png)](https://gyazo.com/eb92e3a6ce49eda5e501ab677e81126d)
