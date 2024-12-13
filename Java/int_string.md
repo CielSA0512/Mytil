@@ -60,7 +60,7 @@
 
 [![Image from Gyazo](https://i.gyazo.com/aec96d4729a7b6ced4e9e22fe5b62ef0.png)](https://gyazo.com/aec96d4729a7b6ced4e9e22fe5b62ef0)
 
-# 〇変数の定数化
+# 〇変数の定数化(final)
 ・「final データ型　定数名＝初期値（固定値）」とすることで、定数として扱える。
 
 　※定数名は必ず半角英数の大文字で記述＆大文字区切り（キャメルケース）を使用。
