@@ -74,9 +74,6 @@
 
 [![Image from Gyazo](https://i.gyazo.com/79a1ab29570f339748a4efab1319af62.png)](https://gyazo.com/79a1ab29570f339748a4efab1319af62)
 
-算術演算子一覧
-[![Image from Gyazo](https://i.gyazo.com/49ff8a2bce1742b401c50e8514ad7a7d.png)](https://gyazo.com/49ff8a2bce1742b401c50e8514ad7a7d)
-
 ※自己代入の省略の仕方
 
 - x = x + 10; → x += 10;
