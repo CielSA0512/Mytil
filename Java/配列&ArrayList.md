@@ -68,7 +68,7 @@
   
 [![Image from Gyazo](https://i.gyazo.com/e86771c5196232dcec3e786923b9fa65.png)](https://gyazo.com/e86771c5196232dcec3e786923b9fa65)
 
-### 使い方
+### 使い方「WorkSpace > Sample1_15_1~4.java」
 #### < add >
 
 [![Image from Gyazo](https://i.gyazo.com/c8104c14e21d8100dec1a23e7d921566.png)](https://gyazo.com/c8104c14e21d8100dec1a23e7d921566)
