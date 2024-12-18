@@ -27,8 +27,11 @@
   ※必ずパッケージ名と同じ名前のフォルダで管理されてなければならないため、パッケージ=フォルダと捉えてもよい
 
 - パッケージ名は環境変数のひとつである「CLASSPATH」からの相対パスとなり、「CLASSPATH」の設定をしないと基本的にはJVMがアクセスできずエラーとなる。
-- 
-  → なので最初にパッケージを含むフォルダを作成したら、環境変数「CLASSPATH」の設定を行わなければならない
+  
+[![Image from Gyazo](https://i.gyazo.com/48167ec8ec00bfbad3d231dc052301b9.png)](https://gyazo.com/48167ec8ec00bfbad3d231dc052301b9)
+（「C:\MyPackage」：CLASSPATH, 「\sample」：相対パス）
+
+  → なので最初にパッケージを含むフォルダを作成したら、環境変数「CLASSPATH」の設定を行う必要有り
 
 #### <無名のパッケージ>
 - 実行ファイルが存在するフォルダ（カレントディレクトリ）を自動的にパッケージとして扱われるもののこと
@@ -47,7 +50,7 @@
   [![Image from Gyazo](https://i.gyazo.com/34f233d82ab25ab4c71f955af90fa717.png)](https://gyazo.com/34f233d82ab25ab4c71f955af90fa717)
 
 ### 使い方（パッケージ、インポート）
-① 「Windows(C:)」直下に「MyPackage」を作成し、その直下に「sample」フォルダを作成して、「Sample1_16_1c.java」をそこに移動。
+① 「Windows(C:)」直下に「MyPackage」を作成し、その直下に「sample」フォルダを作成して、「Sample1_16_1c.java(以下"1c")」をそこに移動。
 
 [![Image from Gyazo](https://i.gyazo.com/eb1372954a41d1e7686f997c141e3821.png)](https://gyazo.com/eb1372954a41d1e7686f997c141e3821)
 
@@ -58,3 +61,16 @@
 ※「.」はカレントディレクトリ（実行されたファイルのフォルダ）、「;」は区切りを意味する
 
 ③ ②まで終わったら、PCを再起動する。
+
+④ 1cのファイルを開き、冒頭に「package sample ;」を追加　→ 1cクラスはsampleパッケージ内に属しているという意味
+
+⑤ 「Sample1_16_1a.java(以下"1a")」のファイルを開き、冒頭に「import sample.Sample1_16_1c ;」を追加　→ コンパイラが1aのコンパイル中に1cを参照可能
+
+⑥ 1aをコンパイルすると、1bと1cも同時に自動コンパイルされる。
+
+#### 理由1：
+1bは1aと同じ「C:\WorkSpace」ディレクトリに属しているため
+
+#### 理由2：
+1aのコンパイル中にコンパイラは「import sample.Sample1_16_1c ;」を参照し、sampleパッケージ内の1cのファイルを参照する。
+sampleパッケージ内の1cを参照できるのは「package sample ;」を宣言しているからである。
