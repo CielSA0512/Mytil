@@ -1,19 +1,38 @@
 # 〇クラスオブジェクトとは
 - Java実行時のロードで、メモリ上に生成されるファイル情報[^1]を格納しているメモリ領域のこと
 - クラスオブジェクトでは「ファイル情報」「フィールド」「メソッド」を保有することが可能
-- フィールドを**クラス変数**、メソッドを**クラスメソッド**、合わせて**静的メンバ**と言う
+- フィールドを**クラス変数**、メソッドを**クラスメソッド**、合わせて**静的メンバ**[^2]と言う
+- クラスオブジェクトは変数名としてクラス名が使われるので「**クラス名.〇〇**」でアクセス可能
+- クラスオブジェクトのメンバはすべてのインスタンスからアクセス可能で、すべてのインスタンス間で共有的に使われる
+  [![Image from Gyazo](https://i.gyazo.com/7f99c9cdfbb9c601fb1cd8604977921f.png)](https://gyazo.com/7f99c9cdfbb9c601fb1cd8604977921f)※値は同じ
 
 [^1]:インスタンスの元
+[^2]:静的メンバはクラスオブジェクトで管理されるため、インスタンス化の際に複製されない。\
+クラスで固有、すべてのインスタンスで共通のものとして扱われる
 
-## ⇒ Javaが実行されたタイミングで、常に使えるように確保されたメモリ領域のこと
+**⇒ Javaが実行されたタイミングで、常に使えるようにあらかじめ確保されたメモリ領域のこと**
 
 # 〇staticとは
 - 修飾子のひとつ
-- これをつけた変数やメソッドは、静的メンバとして扱うことができ、常に使える状態になる
+- これをつけた変数やメソッドは、静的メンバとして扱える
+  [![Image from Gyazo](https://i.gyazo.com/991a20b6f86e89e15de0870c5abec007.png)](https://gyazo.com/991a20b6f86e89e15de0870c5abec007)
 
-### <使用例>
-  [![Image from Gyazo](https://i.gyazo.com/cc90b5838701cbba0b39a0a2ab972d92.png)](https://gyazo.com/cc90b5838701cbba0b39a0a2ab972d92)
-  [![Image from Gyazo](https://i.gyazo.com/d3876f58e6c5f54c665bdbaa27a7d888.png)](https://gyazo.com/d3876f58e6c5f54c665bdbaa27a7d888)
-  [![Image from Gyazo](https://i.gyazo.com/5b216216aa56032008a5ba139a4f3d6a.png)](https://gyazo.com/5b216216aa56032008a5ba139a4f3d6a)
+#### ※mainメソッドはJVMから呼び出され、プログラム終了まで動作し続ける必要があり、クラスオブジェクトの生成のみで使用できるようにstaticが付けられている
+  
+- 静的メンバは「**インスタン名.〇〇**」のように、インスタンスから自分の物のようにアクセス可
+  [![Image from Gyazo](https://i.gyazo.com/1a7a5911f17ba5db1be63cc8f7f126b7.png)](https://gyazo.com/1a7a5911f17ba5db1be63cc8f7f126b7)
+  
+- Java実行時点で既にメモリ上に存在する\
+  ⇒ 通常のメンバと違い**インスタンス化せずに使用可能**
 
+**⇒ staticをつけると、変数やメソッドはJava実行時のロードで、いつでも使える状態になる**
 
+# 〇staticの扱いの注意点
+### --- エラーパターン ---
+  [![Image from Gyazo](https://i.gyazo.com/96c5731221a8dd10bf046a6a821c9e22.png)](https://gyazo.com/96c5731221a8dd10bf046a6a821c9e22)
+  [![Image from Gyazo](https://i.gyazo.com/489db1d8bf872b17af4f2aaca172cf50.png)](https://gyazo.com/489db1d8bf872b17af4f2aaca172cf50)
+
+①
+
+### --- staticオジサン --- 
+- プログラムを実行時にメモリを付けた分だけメモリを確保しなければならないので、非常にメモリを喰ってしまう。
