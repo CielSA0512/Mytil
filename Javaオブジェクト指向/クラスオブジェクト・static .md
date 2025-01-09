@@ -29,10 +29,16 @@
 
 # 〇staticの扱いの注意点
 ### --- エラーパターン ---
-  [![Image from Gyazo](https://i.gyazo.com/96c5731221a8dd10bf046a6a821c9e22.png)](https://gyazo.com/96c5731221a8dd10bf046a6a821c9e22)
+「**staticがついてないメソッドを参照しようとして、存在しなかったため参照できなかった**」
+  [![Image from Gyazo](https://i.gyazo.com/8b16ebc5f7a5c9146299f32db85014bf.png)](https://gyazo.com/8b16ebc5f7a5c9146299f32db85014bf)
   [![Image from Gyazo](https://i.gyazo.com/489db1d8bf872b17af4f2aaca172cf50.png)](https://gyazo.com/489db1d8bf872b17af4f2aaca172cf50)
 
-①
-
-### --- staticオジサン --- 
-- プログラムを実行時にメモリを付けた分だけメモリを確保しなければならないので、非常にメモリを喰ってしまう。
+### --- 解説 ---
+#### ①「Sample2_06_2」をコンパイル時に、mainメソッドの7行目で、「calcSizeTriangle」メソッドが呼び出されている
+#### ②「calcSizeTriangle」メソッドはstaticがついてないため、コンパイル時にクラスオブジェクトには存在しない
+#### ③クラスオブジェクトに存在しないものを参照しようとしているため、エラーが発生
+#### ④12行目で「static」をつけると解決するが・・・・
+  [![Image from Gyazo](https://i.gyazo.com/1828dd6aabdf7a2be950fab24ba557b7.png)](https://gyazo.com/1828dd6aabdf7a2be950fab24ba557b7)
+#### ⑤メモリを使う分だけ消費する「インスタンス化」とは異なり、staticは余分に消費するため、大規模開発の場合、メモリをかなり喰ってしまい、障害のもとになるかもしれない
+#### ⑥なので、インスタンス化の特性を活用することで、解決するのが望ましい
+  [![Image from Gyazo](https://i.gyazo.com/bff4175affe04d9b8b2ca57b428b9d84.png)](https://gyazo.com/bff4175affe04d9b8b2ca57b428b9d84)
