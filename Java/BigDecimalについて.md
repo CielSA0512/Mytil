@@ -4,7 +4,7 @@
 - 四捨五入などの丸め処理の方法や桁数を指定するためにも使う。
 - BigDecimalは通常の数の計算とは異なり、divideやaddのような特殊なメソッドを用いる。「/」や「+」は使えない。
 
-    詳しくは、https://docs.oracle.com/javase/jp/21/docs/api/ 　をチェック
+    詳しくは、[Oracle社　JavaSE21 & JDK21 API仕様](https://docs.oracle.com/javase/jp/21/docs/api/) 　をチェック
 
 #### <double型の計算>
 [![Image from Gyazo](https://i.gyazo.com/371dd2c86c62a7bc30947e71cb672517.png)](https://gyazo.com/371dd2c86c62a7bc30947e71cb672517)
@@ -35,6 +35,4 @@
 [![Image from Gyazo](https://i.gyazo.com/a3a730c4f04df0d11a836e6ef8f8c0f2.png)](https://gyazo.com/a3a730c4f04df0d11a836e6ef8f8c0f2)
 
 ## 〇参考文献
-「Java入門」BigDecimalの大小をcompareToで比較する方法
-
-https://www.sejuku.net/blog/21589?utm_source=blog&utm_medium=blog&utm_campaign=blog__25564
+[Java入門」BigDecimalの大小をcompareToで比較する方法](https://www.sejuku.net/blog/21589?utm_source=blog&utm_medium=blog&utm_campaign=blog__25564)
